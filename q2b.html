@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OU Walking Club</title>
+    <link rel="stylesheet" href="learn.css">
+<body>
+    <div class="container">
+      <div class="title">
+        <p>OU Walking Club</p> 
+      </div>
+        
+      <div class="navigation">
+        <a href="otherevents.html">Other Events</a>
+        <a href="members.html">Members</a>
+      </div>
+          
+    <div class="walk-events">
+              
+     <form class="form-walk-events" method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form2" name="form2">
+         
+    <input type="text" name="field1" class="field-style field-split align-left" placeholder="Name" />
+    <input type="text" name="field2" class="field-style field-split align-right" placeholder="Meeting Point" />
+
+
+
+    <input type="date" name="field3" class="field-style field-split align-left" placeholder="Date" />
+    <input type="time" name="field4" class="field-style field-split align-right" placeholder="Distance" />
+
+    <div class="status-radio">
+
+    <label for="approved">
+        <input type="radio" name="status" id="approved" value="approved" />
+    Approved</label>
+        
+    <label for="not-approved">
+    <input type="radio" name="status" id="not-approved" value="not-approved" checked/>Not Approved
+        </label>
+
+        </div>
+
+<input class="field-style field-split align-left" type="submit" value="Save" />
+
+<input class="field-style field-split align-right" type="submit" value="Delete" />
+
+              
+              <input type="hidden" name="sessionID" id="sessionID" value="12345678-09ab-1111-cdef">
+</form>
+              
+          </div>
+          
+          
+          
+           <div class="news-column">
+             <p>News</p>
+            </div>
+      </div>
+</body>
+</head>
+</html>
