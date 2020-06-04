@@ -1,109 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OU Walking Club</title>
-    <link rel="stylesheet" href="ema.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet"> 
-</head>
-    
-<body>
-    <header>
-        <a href="ema.html" class="header-ou">OU Walking Club</a> 
-        
-      <nav>
-        <ul>
-        <li><a href="otherevents.html">Events</a></li>
-        <li><a href="members.html">Members</a></li>
-        </ul>
-        <a href="news.html" class="header-news">News</a>
-      </nav>
-    </header>
-    
-    <main>
-        
-    <div class="walk-events-title">
-    <h2>Walk Events</h2>
-    </div>
-        
-    <div class="walk-events">
-              
-     <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="walk-events-form" name="walk-events-form">
-    
-         
-    <div class="form-name">
-    <label for="name">Name:</label>
-    <input type="text" name="name" placeholder="e.g. Bellahouston Walk" />
-    </div>
-         
-    <div class="form-meeting-point">
-    <label for="meeting-point">Meeting Point:</label>
-    <input type="text" name="meeting-point"  placeholder="e.g. Dumbreck station" />
-    </div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OU Walking Club</title>
+        <link rel="stylesheet" href="ema.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header class="font-size--larger">
+            <a href="ema.html" class="header-ou">OU Walking Club</a> 
 
-    <div class="form-date">
-        <label for="date">Date:</label>
-    <input type="date" name="date"/>
-    </div>
-         
-    <div class="form-time">
-        <label for="time">Starting Time:</label>
-    <input type="time" name="time"/>
-    </div>
-         
-    <div class="form-distance">
-        <label for="distance">Distance:</label>
-    <input type="number" name="distance" placeholder="Distance in miles" />
-    </div>
-         
-    <div class="form-notes">
-        <label for="notes">Notes:</label>
-    <input type="text" name="notes"  placeholder="Enter your notes" />
-    </div>
+        </header>
+        <nav class="font-size--large">
+            <ul>
+                <li><a href="otherevents.html">Events</a></li>
+                <li><a href="members.html">Members</a></li>
+            </ul>
 
-    <div class="status-radio">
-
-    <div class="form-approved">
-    <label for="approved">
-        <input type="radio" name="status" id="approved" value="approved" />
-        Approved</label>
-    </div>
-        
-    <div class="form-not-approved">
-    <label for="not-approved">
-    <input type="radio" name="status" id="not-approved" value="not-approved" checked/>Not Approved
-        </label>
-</div>
-
-        </div>
-<div class="form-save">
-<input type="submit" value="Save" />
-</div>
-         
-<div class="form-delete">
-<input type="submit" value="Delete" />
-         </div>
-
-
-
-              
-              <input type="hidden" name="sessionID" id="sessionID" value="12345678-09ab-1111-cdef">
-</form>
-              
-          </div>
-          
-          
-          
-           <div class="news-column">
-             <h1>News</h1>
-               
+        </nav>
+        <main>
+            <div class="walk-events-title">
+                <h2>Walk Events</h2>
             </div>
-    </main>
-<footer>
-    <p>Contact number: +447123456789</p>
+            <div class="walk-events" class="font-size--small">
+                <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="walk-events-form" name="walk-events-form">
+                    <div class="form-edit">
+                        <input type="submit" value="Edit" />
+                    </div>
+                    <div class="form-name">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" placeholder="e.g. Bellahouston Walk" />
+                    </div>
+                    <div class="form-meeting-point">
+                        <label for="meeting-point">Meeting Point:</label>
+                        <input type="text" name="meeting-point"  placeholder="e.g. Dumbreck station" />
+                    </div>
+                    <div class="form-date">
+                        <label for="date">Date:</label>
+                        <input type="date" name="date"/>
+                    </div>
+                    <div class="form-time">
+                        <label for="time">Starting Time:</label>
+                        <input type="time" name="time"/>
+                    </div>
+                    <div class="form-distance">
+                        <label for="distance">Distance:</label>
+                        <input type="number" name="distance" placeholder="Distance in miles" />
+                    </div>
+                    <div class="form-notes">
+                        <label for="notes">Notes:</label>
+                        <input type="text" name="notes"  placeholder="e.g. Stay hydrated!" />
+                    </div>
+                    <div class="status-radio">
+                        <div class="form-approved">
+                            <label for="approved">
+                                <input type="radio" name="status" id="approved" value="approved" />
+                                Approved</label>
+                        </div>
+                        <div class="form-not-approved">
+                            <label for="not-approved">
+                                <input type="radio" name="status" id="not-approved" value="not-approved" checked/>Not Approved
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-save">
+                        <input type="submit" value="Save" />
+                    </div>
+                    <div class="form-delete">
+                        <input type="submit" value="Delete" />
+                    </div>
+                    <input type="hidden" name="sessionID" id="sessionID" value="12345678-09ab-1111-cdef">
+                </form>
+            </div>
+        </main>
+        <div class="news-column">
+            <h2>News</h2>
+        </div>
+        <footer>
+            <p>Contact number: +447123456789</p>
         </footer>
-</body>
-        
-
+    </body>
 </html>
